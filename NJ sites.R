@@ -3,7 +3,6 @@ library(ape)
 library(ggplot2)
 library(ggtree)
 
-b=1
 
 EnvSite1 = env_site
 EnvMig1 = env_migration
@@ -29,8 +28,7 @@ bionjmglad_sc <- ladderize(bionjmg_sc) # set as ladder
 bionj1mgla_sc.phy <- multi2di(bionjmglad_sc) #resolve basal polytomy
 plot(bionj1mgla_sc.phy)
 axisPhylo()
-nodelabels() # add node numbers
-tiplabels()  # add tip numbers
+nodelabels()
 
 ##--------------Locations: Environmental NJ -------------------##
 EnvSite
@@ -51,12 +49,11 @@ bionjstlad_sc <- ladderize(bionjst_sc) # set as ladder
 bionj1stla_sc.phy <- multi2di(bionjstlad_sc) #resolve basal polytomy
 plot(bionj1stla_sc.phy)
 axisPhylo()
-nodelabels() # add node numbers
-tiplabels()  # add tip numbers
+nodelabels()
 
 
 
-#final scripts------------------ Based on scaled data and bioNJ
+#final figures------------------ Based on scaled data and bioNJ
 
 
 
